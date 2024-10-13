@@ -54,6 +54,8 @@ This repository implements a multilingual dictionary with support for various la
      - **`HashTable::~HashTable()`**  
        Destructor that cleans up the memory used by the hash table. It iterates over all the buckets, deleting any dynamically allocated memory associated with the linked lists storing the translations.
 
+**Code:** [`hashtable.h`](./hashtable.h) | [`hashtable.cpp`](./hashtable.cpp)
+
 ---
 
 ### `main.cpp`
@@ -65,7 +67,9 @@ This repository implements a multilingual dictionary with support for various la
      - Initializes the hash table.
      - Loads the dictionary from files like `en-es.txt` and `en-fr.txt`, which contain English-to-Spanish and English-to-French translations, respectively.
      - Provides an interface for the user to interact with the dictionary, including adding new translations and looking up words.
-     
+
+**Code:** [`main.cpp`](./main.cpp)
+
 ---
 
 ### Dictionary Files
@@ -73,7 +77,11 @@ This repository implements a multilingual dictionary with support for various la
 - **`en-es.txt`**  
   This file contains English-to-Spanish word translations. Each line consists of a word in English, followed by its corresponding translation in Spanish. These translations are loaded into the hash table at runtime.
 
+**Code:** [`en-es.txt`](./en-es.txt)
+
 - **`en-fr.txt`**  
   This file contains English-to-French word translations. Similar to the `en-es.txt` file, it lists words in English alongside their French translations.
+
+**Code:** [`en-fr.txt`](./en-fr.txt)
 
 ---
